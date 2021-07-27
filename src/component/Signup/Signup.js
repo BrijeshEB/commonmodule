@@ -23,43 +23,30 @@
                           fluid
                           maxLength={30}
                           placeholder="First Name"
-                          // value={formData.firstName}
                           name="firstName"
-                          // onChange={handleInputChange}
                         />
                         <Form.Input
                           fluid
                           maxLength={30}
                           placeholder="Last Name"
                           name="lastName"
-                          // value={formData.lastName}
-                          // onChange={handleInputChange}
                         />
                         <Form.Input
                           fluid
                           maxLength={70}
                           placeholder="Enter Email"
-                          // value={formData.email}
                           name="email"
-                          // onChange={handleInputEmail}
                         />
                         <Form.Input
                           fluid
                           type="password"
-                          // type={showPassword ? "input" : "password"}
                           maxLength={25}
                           placeholder="******"
-                          // onKeyUp={() => setPasswordError(false)}
-                          // value={formData.password}
                           name="password"
-                          // error={!user.password ? {content: "Password is required"}: false }
-                          // onChange={handleInputChangePassword}
                         />
                         <Button
                           className="btn_big_text login-page-btn"
-                          // onClick={doUserSignUp}
                           style={{ marginBottom: 8, color: "#fff" }}
-                          // disabled={disableSubmit}
                         >
                           Submit
                         </Button>

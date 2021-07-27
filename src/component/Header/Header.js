@@ -39,20 +39,35 @@ const Header = () => {
         <NavLink to='/' className="company-logo-name"><img src={logo} className="header-logo" alt="logo" />Common Module</NavLink>
         <div className="navbar-menus">
             <NavLink exact className="nav-link" to="/" activeClassName="active_link">Dashboard</NavLink>
-            <NavLink exact className="nav-link" to="/createAnnouncement" activeClassName="active_link">Create Announcement</NavLink>
-            <NavLink exact className="nav-link" to="/savedAnnouncement" activeClassName="active_link">Saved Announcement</NavLink>
-            <NavLink exact className="nav-link" to="/editorlist" activeClassName="active_link">List & Editor</NavLink>
-            <NavLink exact className="nav-link" to="/editor" activeClassName="active_link">Editor</NavLink>
-            <NavLink exact className="nav-link has-dropdown-menu" to="/" activeClassName="active_link">
-            DropDown Test
+
+            <NavLink exact className="nav-link has-dropdown-menu" to="/createAnnouncement" activeClassName="active_link">
+            <span className="dropdown-menu-span">Announcement</span>
             <div className="dropdown-menu">
-                <NavLink exact className="nav-link" to="/editor" activeClassName="active_link">Item 1</NavLink>
-                <NavLink exact className="nav-link" to="/editor" activeClassName="active_link">Item 2</NavLink>
-                <NavLink exact className="nav-link" to="/editor" activeClassName="active_link">Item 3</NavLink>
+                <NavLink exact className="nav-link" to="/createAnnouncement" activeClassName="active_link">Create New</NavLink>
+                <NavLink exact className="nav-link" to="/savedAnnouncement" activeClassName="active_link">Select Saved</NavLink>
             </div>
             </NavLink>
 
+            <NavLink exact className="nav-link has-dropdown-menu" to="/createAnnouncement" activeClassName="active_link">
+            <span className="dropdown-menu-span">Templates</span>
+            <div className="dropdown-menu">
+                <NavLink exact className="nav-link" to="/editorlist" activeClassName="active_link">List & Editor</NavLink>
+                <NavLink exact className="nav-link" to="/editor" activeClassName="active_link">Editor</NavLink>
+            </div>
+            </NavLink>
+
+            {/* <NavLink exact className="nav-link" to="/createAnnouncement" activeClassName="active_link">Create Announcement</NavLink> */}            
+            {/* <NavLink exact className="nav-link" to="/savedAnnouncement" activeClassName="active_link">Saved Announcement</NavLink> */}
+
             <NavLink className="nav-link" to="/" onClick={Logout} >Logout</NavLink>
+
+            {/* <NavLink exact className="nav-link has-dropdown-menu" to="/" activeClassName="active_link">
+            <span className="dropdown-menu-span">DropDown Test</span>
+            <div className="dropdown-menu">
+                <NavLink exact className="nav-link" to="/editor" activeClassName="active_link">Item 1</NavLink>
+                <NavLink exact className="nav-link" to="/editor" activeClassName="active_link">Item 2</NavLink>
+            </div>
+            </NavLink> */}
             
         </div>
     </div>

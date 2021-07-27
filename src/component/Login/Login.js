@@ -29,29 +29,12 @@ export default function Login() {
                       <Form.Input
                         fluid
                         type='password'
-                        // type={showPassword ? "input" : "password"}
                         placeholder="******"
-                        // value={password}
                         maxLength={25}
                         name="password"
-                        // icon={
-                        //   <Icon
-                        //     name={showPassword ? "eye slash" : "eye"}
-                        //     link
-                        //     onClick={showHidePassword}
-                        //   />
-                        // }
-                        // error={
-                        //   passwordError
-                        //     ? { content: "Password is required" }
-                        //     : false
-                        // }
-                        // onChange={(e) => setPassword(e.target.value)}
-                        // onKeyUp={() => setPasswordError(false)}
                       />
                       <center>
                         <Link
-                        //   to="/forgot-password"
                           className="lbl_href"
                           style={{ color: "#000", fontWeight: 500 }}
                         >
@@ -60,9 +43,7 @@ export default function Login() {
                       </center>
                       <Button
                         className="btn_big_text login-page-btn"
-                        // onClick={doUserLogin}
                         style={{ color: "#fff" }}
-                        // disabled={disableSubmit}
                       >
                         <Link to="/" className="text-white">Sign In</Link>
                       </Button>
