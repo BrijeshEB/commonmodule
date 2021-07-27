@@ -1,0 +1,163 @@
+// @import "../Sys/Variable.scss";
+
+$primaryColorDark: #000839;
+$buttonColor: #000839;
+$blackText: #141414;
+$cyancolor: #8dfce7;
+$primaryColorOrange: "#ffa41b";
+// $buttonHoverColor: #19b0d6 ;
+// $errorText: #ff0000f2;
+// $sidebarColor: #3E3E3E;
+// $bodyColor: #fff;
+// $secondryColor: #0082ca;
+// $successMessageBGColor:#19b0d6 ;
+$backgroundWhite: #fff;
+
+.bg-image {
+  // background-image: url("../../assets/img/bg-login-img.png");
+  height: 100vh;
+  margin: 0;
+  width: 100%;
+  background-color: $backgroundWhite;
+  // display: flex;
+}
+.imge-side-login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dot-img-right {
+  right: 7%;
+  width: 60px;
+  top: 1%;
+  position: absolute;
+}
+.logo-img {
+  left: 5%;
+  position: absolute;
+}
+.dot-img {
+  position: absolute;
+  left: 5%;
+  bottom: 0;
+}
+.login-form {
+  max-height: 700px;
+  overflow-y: auto;
+  width: 460px;
+  padding: 20px 50px;
+  margin: 0px auto !important;
+  margin-left: 10%;
+  border-radius: 5px;
+  padding-top: 0 !important;
+  box-shadow: 0 0px 15px -5px #989898;
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  .field {
+    label {
+      color: #7d8491 !important;
+      font-size: 16px !important;
+      font-weight: 400 !important;
+    }
+    .ui.input input {
+      padding: 11px;
+    }
+  }
+  .login-input {
+    margin-top: 35px;
+  }
+  .bottom-contant {
+    width: 100%;
+    .text-last-login {
+      font-size: 16px;
+      text-align: center;
+      display: block;
+      line-height: 1.63;
+    }
+  }
+}
+
+.ui.small.form {
+  width: 100%;
+  .header-login {
+    font-size: 40px;
+    color: $blackText;
+    .sub.header {
+      color: #7c8187;
+    }
+  }
+}
+button.ui.button {
+  &.btn_big_text {
+    box-shadow: 0 3px 15px 0 rgba(141, 252, 231, 0.24);
+    width: 100%;
+    padding: 13px;
+    background-color: $buttonColor;
+    color: rgb(255, 255, 255);
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 18px;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px 0 rgba(170, 201, 213, 0.25);
+    .btn_big_text:hover {
+      background-color: $buttonColor;
+    }
+    .btn_big_text::before {
+      background-color: $buttonColor;
+    }
+    .btn_big_text::after {
+      background-color: $buttonColor;
+    }
+  }
+}
+
+.label-text {
+  color: #fff !important;
+}
+
+// ----------------------------------------------------------------------------------
+
+.bg-login-banner {
+  background-image: url(https://colorlib.com/etc/lf/Login_v4/images/bg-01.jpg);
+  background-size: cover;
+}
+button.login-page-btn {
+  background-image: url(https://colorlib.com/etc/lf/Login_v4/images/bg-01.jpg) !important;
+  background-size: 100% !important;
+  font-size: 19px !important;
+  padding: 15px !important;
+  display: block !important;
+  letter-spacing: 0.5px !important;
+  text-transform: uppercase !important;
+}
+.login-input .field {
+  position: relative;
+}
+.login-input .field input {
+  padding: 15px !important;
+  margin-bottom: 10px !important;
+  font-size: 16px !important;
+  border: solid 1px #b8c4fb !important;
+}
+.login-input .field:last-child input{
+  margin-bottom: 0px !important;
+}
+.ui.form .field .prompt.label {
+  white-space: normal;
+  background: #fff!important;
+  border: 1px solid #e0b4b4!important;
+  color: #9f3a38!important;
+  position: absolute;
+  z-index: 1;
+  bottom: -23px;
+  left: 5px;
+}
+.text-white{color: #ffffff;}
+.text-orange{color: #ffa41b;}
